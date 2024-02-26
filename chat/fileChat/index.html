@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="asset/icons/favicon.ico" />
+  <link rel="stylesheet" href="asset/main.css" />
+  <title>Moth Samples</title>
+</head>
+<body>
+    <div class="container">
+      <section class="title-wrapper">
+        <h1>File Chat</h1>
+        <p>Send and receive file.</p>
+      </section>
+
+      <section class="function-wrapper">
+        <article class="setting-wrapper">
+          <h4>MOTH API</h4>
+          <div class="set-config-wrapper">
+            <label>HOST</label>
+            <input type="text" id="inputHost" placeholder="Please enter the host"/>
+            
+            <label>PORT</label>
+            <input type="number" id="inputPort" placeholder="Please enter the port number"/>
+            <button   id="buttonFindChannels">Find channel</button>
+          </div>
+
+          <div class="set-config-wrapper">
+            <label>CHANNEL</label>
+            <select id="selectChannel"></select>
+            <input type="text" id="inputChannel"/>
+
+            <button id="buttonInitializeWebSocket">Connect</button>
+            <button id="buttonCloseWebsocket">Disconnet</button>
+          </div>
+
+          <div class="set-config-wrapper">
+            <label>Nickname</label>
+            <input id="inputNickname" placeholder="Please enter the nickname to use"/>
+            <button id="buttonSetNickname">Set Nickname</button>
+          </div>
+        </article>
+
+        <hr/>
+
+        <article class="message-wrapper">
+          <h4>File chat</h4>
+          <div id="chatList"></div>
+          <div class="chat-input">
+            <input type="file" id="inputFile"/>
+            <button id="buttonSendMessage">Send</button>
+          </div>
+        </article>
+      </section>
+    </div>
+    
+    <script src="js/mothAPI.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

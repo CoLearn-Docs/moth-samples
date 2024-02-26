@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="asset/icons/favicon.ico" />
+  <link rel="stylesheet" href="asset/main.css" />
+  <title>Moth Samples</title>
+</head>
+<body>
+    <div class="container">
+        <section class="title-wrapper">
+          <h1>Sensor</h1>
+          <p>Receiving sensor data from the robot.</p>
+        </section>
+
+        <section class="function-wrapper">
+          <article class="set-config-wrapper">
+              <label>Host</label>
+              <input type="text" id="inputHost" placeholder="Please enter the host"/>
+
+              <label>Port</label>
+              <input type="number" id="inputPort" placeholder="Please enter the port number"/>
+              <button   id="buttonFindChannels">Find channel</button>
+
+              <label>Channel</label>
+              <select id="selectChannel"></select>
+              <input type="text" id="inputChannel"/>
+          </article>
+
+          <article class="broadcast-wrapper">
+            <div class="video-wrapper">
+              <label>Video</label>
+              <canvas id="canvasElement" width="3840" height="2160"></canvas>
+              <button id="buttonInitializeWebSocket">Open Websocket</button>
+              <button id="buttonCloseWebsocket">Close Websocket</button>
+            </div>
+
+
+          <div class="sensor-box">
+            <label>Sensor Data</label>
+            <button id="buttonFan">Fan</button>
+            <button id="buttonServoMotor">Servo Motor</button>
+
+            <div class="sensor-data-box">
+              <label>Temperature</label>
+              <div class="prograss-container">
+                <p id="temperatureText">0 °C</p>
+                <div class="prograss-bar">
+                  <div class="prograss-innerbar" id="temperatureBar"></div>
+                </div>
+              </div>
+              
+              <label>Humidity</label>
+              <div class="prograss-container">
+                <p id="humidityText">0 %</p>
+                <div class="prograss-bar">
+                  <div class="prograss-innerbar" id="humidityBar"></div>
+                </div>
+              </div>
+              
+                <label>Illuminance</label>
+              <div class="prograss-container">
+                <p id="illuminanceText">0 lx</p>
+                <div class="prograss-bar">
+                  <div class="prograss-innerbar" id="illuminanceBar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/VideoDecoder.js"></script>
+    <script src="js/mothAPI.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

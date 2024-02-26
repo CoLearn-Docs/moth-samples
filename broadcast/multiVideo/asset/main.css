@@ -1,0 +1,77 @@
+/* TAG */
+body {
+  background-color: #f5f5f5;
+}
+
+p {
+  line-height: 1.8;
+}
+
+button,
+input,
+select {
+  border: 2px solid #515151;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #515151;
+  color: #f5f5f5;
+}
+
+canvas,
+video {
+  width: 600px;
+  height: 450px;
+  border: 1px solid #1c1c1c;
+}
+
+hr {
+  border: 1.5px solid #1c1c1c;
+}
+
+/* CLASS */
+.container {
+  padding: 10px 30px;
+}
+
+.title-wrapper {
+  padding-left: 10px;
+  border-bottom: 3px solid #1c1c1c;
+}
+
+.function-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.function-wrapper article {
+  padding: 10px 20px;
+}
+
+.set-config-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.broadcast-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

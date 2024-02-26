@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="asset/icons/favicon.ico" />
+  <link rel="stylesheet" href="asset/main.css" />
+  <title>Moth Samples</title>
+</head>
+<body>
+  <div class="container">
+    <section class="title-wrapper">
+      <h1>SpiderPi</h1>
+
+      <p>
+        An AI hexapod operated by Raspberry Pi 4B. <br/>
+        It features vision AI availability like color recognition, color tracking and facial recognition. <br/>
+        By using Moth server, users can deploy remote AI with SpiderPi. <br/>
+      </p>
+    </section>
+
+    <section class="control-wrapper">
+      <article>
+        <h4> CONTROL KEY </h4>
+
+        <div>
+          <p>
+            ⬆️ : FORWARD <br/>
+            ⬇️ : BACKWARD <br/>
+            ⬅️ : LEFT <br/>
+            ➡️ : RIGHT <br/>
+          </p>
+        </div>
+      </article> 
+
+      <hr/>
+
+      <article class="canvas-wrapper">
+        <h4>MOTH API</h4>
+        <div class="set-config-wrapper">
+            <label>HOST</label>
+            <input type="text" id="inputHost" placeholder="Please enter the host"/>
+
+            <label>PORT</label>
+            <input type="number" id="inputPort" placeholder="Please enter the port number"/>
+
+            <label>CHANNEL NAME</label>
+            <input type="text" id="inputChannelName"/>
+
+          <button   id="buttonConnect">Connect</button>
+        </div>
+
+        <div>
+          <canvas id="canvasElement" width="3840" height="2160"></canvas>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <script src="js/VideoDecoder.js"></script>
+  <script src="js/mothAPI.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

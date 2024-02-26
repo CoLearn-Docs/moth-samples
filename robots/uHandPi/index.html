@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="asset/icons/favicon.ico" />
+  <link rel="stylesheet" href="asset/main.css" />
+  <title>Moth Samples</title>
+</head>
+<body>
+  <div class="container">
+    <section class="title-wrapper">
+      <h1>uHandPi</h1>
+
+      <p>
+        uHandPi utilizes remote cloud communication for real-time streaming and operation. <br/>
+        You can also make your hand move by linking with the media pipe, and you can play rock-paper-scissors with Finger Pi by introducing AI technology.
+      </p>
+    </section>
+
+    <section class="control-wrapper">
+      <article>
+        <h4> CONTROL KEY </h4>
+
+        <div>
+          <p>
+            👍 : Thumb_Up <br/>
+            👎 : Thumb_Down <br/>
+            ✌️ : Victory <br/>
+            ☝️ : Pointing_Up <br/>
+            ✊ : Closed_Fist <br/>
+            ✋ : Open_Palm <br/>
+            🤟 : ILoveYou <br/>
+          </p>
+        </div>
+      </article> 
+
+      <hr/>
+
+      <article class="canvas-wrapper">
+        <h4>MOTH API</h4>
+        <div class="set-config-wrapper">
+            <label>HOST</label>
+            <input type="text" id="inputHost" placeholder="Please enter the host"/>
+
+            <label>PORT</label>
+            <input type="number" id="inputPort" placeholder="Please enter the port number"/>
+
+            <label>CHANNEL NAME</label>
+            <input type="text" id="inputChannelName"/>
+
+          <button   id="buttonConnect">Connect</button>
+        </div>
+
+        <div class="set-config-wrapper">
+          <label>CAMERA</label>
+          <select id="selectCamera"></select>
+        </div>
+
+        <div>
+          <video id="videoElement" autoplay></video>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <script src="js/VideoDecoder.js"></script>
+  <script src="js/mothAPI.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

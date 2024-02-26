@@ -1,0 +1,68 @@
+/* TAG */
+body {
+  background-color: #f5f5f5;
+}
+
+p {
+  line-height: 1.8;
+}
+
+button,
+input,
+select {
+  border: 2px solid #515151;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #515151;
+  color: #f5f5f5;
+}
+
+hr {
+  border: 1.5px solid #1c1c1c;
+}
+
+video {
+  width: 640px;
+  height: 480px;
+}
+
+/* CLASS */
+.container {
+  padding: 10px 30px;
+}
+
+.title-wrapper {
+  padding-left: 10px;
+  border-bottom: 3px solid #1c1c1c;
+}
+
+.control-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: calc(100vh);
+}
+
+.control-wrapper article {
+  padding: 10px 20px;
+}
+
+.set-config-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.setting-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
